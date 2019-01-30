@@ -1,0 +1,1 @@
+KarlVonPi is a set of python scripts and set up instructions designed for the programmatic recording of honey bee behavior. The immediate context of the work is the recording of waggle dance behavior for subsequent decoding, but these scripts could be adapted for application in which programmatic video recording is needed.
