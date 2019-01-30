@@ -4,7 +4,7 @@ Materials:
 RaspberryPi 3 B+ computer (with power source, peripherals, OS, etc.)
 ArduCam NOIR
 
-This approach uses the ArduCam NOIR RaspberryPi camera. The appeal of this camera is its ability to switch on or off an infrared filter, thus enabling good quality recording in a range of light conditions. It comes with twin IR LEDs that switch on in low light conditions to provide IR illumination, enabling video to be recorded in total darkness as long as the subject is within a few feet of the camera.
+This approach uses the ArduCam NOIR RaspberryPi camera. The appeal of this camera is its ability to switch on or off an infrared filter, thus enabling good quality recording in a range of light conditions. It comes with twin IR LEDs that switch on in low light conditions to provide IR illumination, enabling video to be recorded in total darkness as long as the subject is within a few feet of the camera. Note that the IR LEDs will reflect off the glass of an observation hive, creating two small circles of glare that obscure the bees. This is probably not a critical problem since most dance behavior will occur outside the glare. A solution would be to use indirect IR illumination, but that would require addition equipment.
 
 Start by downloading the software needed to operate the IR filter switch. The following instructions are found on https://github.com/ArduCAM/RPI_Motorized_IRCut_Control
 
