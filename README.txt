@@ -1,14 +1,18 @@
 KarlVonPi is a set of python scripts and set up instructions designed for the programmatic recording of honey bee behavior. The immediate context of the work is the recording of waggle dance behavior for subsequent decoding, but these scripts could be adapted for any application in which programmatic video recording is needed.
 
 Materials:
-RaspberryPi 3 B+ computer (with power source, peripherals, OS, etc.)
+RaspberryPi Zero Wm computer (with power source, peripherals, OS, etc.)
 ArduCam NOIR
 
 This approach uses the ArduCam NOIR RaspberryPi camera. The appeal of this camera is its ability to switch on or off an infrared filter, thus enabling good quality recording in a range of light conditions. It comes with twin IR LEDs that switch on in low light conditions to provide IR illumination, enabling video to be recorded in total darkness as long as the subject is within a few feet of the camera. Note that the IR LEDs will reflect off the glass of an observation hive, creating two small circles of glare that obscure the bees. This is probably not a critical problem since most dance behavior will occur outside the glare. A solution would be to use indirect IR illumination, but that would require addition equipment.
 
+----------------------------
+
+1. Use raspi-config --> Interfacing --> Camera to enable camera
+
 ---
 
-1. Download the software needed to operate the IR filter switch. The following instructions are found on https://github.com/ArduCAM/RPI_Motorized_IRCut_Control
+2. Download the software needed to operate the IR filter switch. The following instructions are found on https://github.com/ArduCAM/RPI_Motorized_IRCut_Control
 
 Disable the automatic management of camera led in /boot/config.txt.
 
@@ -28,7 +32,7 @@ $ chmod 755 CameraLED.py
 
 ---
 
-2. Install APScheduler python library. This library contains the methods needed to schedule video recording. See user manual: https://apscheduler.readthedocs.io/en/latest/userguide.html
+3. Install APScheduler python library. This library contains the methods needed to schedule video recording. See user manual: https://apscheduler.readthedocs.io/en/latest/userguide.html
 
 $ pip install apscheduler
 
